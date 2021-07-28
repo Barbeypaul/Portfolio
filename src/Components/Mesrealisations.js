@@ -7,7 +7,7 @@ export class Mesrealisations extends Component {
         return (
             <div>
                 <div className="container p-5">
-                    <h2><i class="fas fa-address-card"></i> Mes realisations</h2>
+                    <h2><i class="fas fa-address-card"></i> Mes Réalisations</h2>
                     <p className="text-white">Voici quelques projets sur lesquels j'ai travaillé récemment.</p>
                     <div className="container">
                         <div className="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">

@@ -8,11 +8,11 @@ export class QuiJeSuis extends Component {
                 <div className="container p-5 mt-5">
                     <h2><i class="fas fa-address-card"></i> Bonjour, je m'appelle Paul. Ravi de vous rencontrer !
                     </h2>
-                    <div className="row pt-5 pb-5 ">
+                    <div className="row pt-5 pb-5 d-flex justify-content-center ">
                         <div class="card bg-dark shadow-5 rounded ">
                             <div class="row g-0">
-                                <div class="col-md-4 d-flex justify-content-center">
-                                    <img className="img-moi m-5 " src={moi}></img>
+                                <div class="col-md-4  d-flex justify-content-center">
+                                    <img className="img-moi m-5 img-fluid" src={moi}></img>
                                 </div>
                                 <div class=" col-md-8 ">
                                     <div class="card-body">
