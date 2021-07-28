@@ -1,6 +1,6 @@
 :root {
   --navbar-background-color: #262626;
-  --navbar-item-hovered-color: #262626;
+  --navbar-item-hovered-color: transparent;
   --navbar-separator-color: #262626;
   --navbar-icon-color: #ffffff;
   --navbar-text-color: white;
@@ -16,16 +16,10 @@ body {
   font-size: 16px;
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
-}
-
-main {
-  padding: 1rem 4rem;
-  margin-left: 5rem;
-  text-align: justify;
 }
 
 .navbar {
+  z-index: 10;
   width: 5rem;
   position: fixed;
   top: 0px;
@@ -52,7 +46,7 @@ main {
 
 .navbar-item {
   width: 100%;
-  border-bottom: solid 1px var(--navbar-separator-color);
+  border-bottom: solid 0px var(--navbar-separator-color);
   transition: background-color var(--navbar-transition-speed);
 }
 
@@ -121,8 +115,13 @@ main {
 @media only screen and (max-width:1024px) {
   .navbar {
     top: 0px;
-    width: 100%;
     bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    width: 100%;
+    text-decoration: none;
   }
 
   .navbar:hover {
@@ -131,6 +130,7 @@ main {
 
   .navbar-menu {
     flex-direction: row;
+    margin: 0;
   }
 
   .logo {
@@ -148,11 +148,10 @@ main {
 
   .navbar-icon {
     min-width: auto;
-    margin: 0;
   }
 
   .navbar-link {
-    justify-content: center;
+    justify-content: center !important;
   }
 }
 
@@ -503,4 +502,31 @@ main {
   100% {
     opacity: 1;
   }
+}
+
+.top200 {
+  top: 200%;
+}
+
+.img-moi {
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.box-timeline1 {
+  border-color: #FFD15C;
+  border-style: solid;
+  border-width: 0px 0px 5px 5px;
+}
+
+.box-timeline2 {
+  border-color: #FFD15C;
+  border-style: solid;
+  border-width: 0px 5px 5px 0px;
+}
+
+.box-timeline3 {
+  border-color: #FFD15C;
+  border-style: solid;
+  border-width: 0px 5px 0px 0px;
 }

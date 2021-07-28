@@ -14,13 +14,12 @@ export class Accueil extends Component {
                     </span>
                     <br></br>
                     <span>
-                        Développeur Junior Javascript
+                        Développeur Front End Javascript
                     </span>
                     <div>
                         <BoutonGitIn></BoutonGitIn>
                         <Mouse></Mouse>
                     </div>
-
                 </div>
             </div>
         )
